@@ -15,6 +15,11 @@
 		274EC8421F01723A00925865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274EC8401F01723A00925865 /* LaunchScreen.storyboard */; };
 		274EC84D1F01723A00925865 /* JPAudioPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC84C1F01723A00925865 /* JPAudioPlayerTests.m */; };
 		274EC8581F01723A00925865 /* JPAudioPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8571F01723A00925865 /* JPAudioPlayerUITests.m */; };
+		274EC8701F01724A00925865 /* NSURL+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8671F01724A00925865 /* NSURL+SZ.m */; };
+		274EC8711F01724A00925865 /* JPAudioDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8691F01724A00925865 /* JPAudioDownLoader.m */; };
+		274EC8721F01724A00925865 /* JPRemoteAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC86B1F01724A00925865 /* JPRemoteAudioFile.m */; };
+		274EC8731F01724A00925865 /* JPRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC86D1F01724A00925865 /* JPRemotePlayer.m */; };
+		274EC8741F01724A00925865 /* JPRemoteResourceLoaderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC86F1F01724A00925865 /* JPRemoteResourceLoaderDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		274EC8531F01723A00925865 /* JPAudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPAudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274EC8571F01723A00925865 /* JPAudioPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPAudioPlayerUITests.m; sourceTree = "<group>"; };
 		274EC8591F01723A00925865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274EC8661F01724A00925865 /* NSURL+SZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SZ.h"; sourceTree = "<group>"; };
+		274EC8671F01724A00925865 /* NSURL+SZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SZ.m"; sourceTree = "<group>"; };
+		274EC8681F01724A00925865 /* JPAudioDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAudioDownLoader.h; sourceTree = "<group>"; };
+		274EC8691F01724A00925865 /* JPAudioDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAudioDownLoader.m; sourceTree = "<group>"; };
+		274EC86A1F01724A00925865 /* JPRemoteAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPRemoteAudioFile.h; sourceTree = "<group>"; };
+		274EC86B1F01724A00925865 /* JPRemoteAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPRemoteAudioFile.m; sourceTree = "<group>"; };
+		274EC86C1F01724A00925865 /* JPRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPRemotePlayer.h; sourceTree = "<group>"; };
+		274EC86D1F01724A00925865 /* JPRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPRemotePlayer.m; sourceTree = "<group>"; };
+		274EC86E1F01724A00925865 /* JPRemoteResourceLoaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPRemoteResourceLoaderDelegate.h; sourceTree = "<group>"; };
+		274EC86F1F01724A00925865 /* JPRemoteResourceLoaderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPRemoteResourceLoaderDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		274EC8311F01723A00925865 /* JPAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				274EC8651F01724A00925865 /* Classes */,
 				274EC8351F01723A00925865 /* AppDelegate.h */,
 				274EC8361F01723A00925865 /* AppDelegate.m */,
 				274EC8381F01723A00925865 /* ViewController.h */,
@@ -138,6 +154,23 @@
 				274EC8591F01723A00925865 /* Info.plist */,
 			);
 			path = JPAudioPlayerUITests;
+			sourceTree = "<group>";
+		};
+		274EC8651F01724A00925865 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				274EC8661F01724A00925865 /* NSURL+SZ.h */,
+				274EC8671F01724A00925865 /* NSURL+SZ.m */,
+				274EC8681F01724A00925865 /* JPAudioDownLoader.h */,
+				274EC8691F01724A00925865 /* JPAudioDownLoader.m */,
+				274EC86A1F01724A00925865 /* JPRemoteAudioFile.h */,
+				274EC86B1F01724A00925865 /* JPRemoteAudioFile.m */,
+				274EC86C1F01724A00925865 /* JPRemotePlayer.h */,
+				274EC86D1F01724A00925865 /* JPRemotePlayer.m */,
+				274EC86E1F01724A00925865 /* JPRemoteResourceLoaderDelegate.h */,
+				274EC86F1F01724A00925865 /* JPRemoteResourceLoaderDelegate.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				274EC83A1F01723A00925865 /* ViewController.m in Sources */,
+				274EC8721F01724A00925865 /* JPRemoteAudioFile.m in Sources */,
+				274EC8741F01724A00925865 /* JPRemoteResourceLoaderDelegate.m in Sources */,
+				274EC8731F01724A00925865 /* JPRemotePlayer.m in Sources */,
+				274EC8701F01724A00925865 /* NSURL+SZ.m in Sources */,
 				274EC8371F01723A00925865 /* AppDelegate.m in Sources */,
 				274EC8341F01723A00925865 /* main.m in Sources */,
+				274EC8711F01724A00925865 /* JPAudioDownLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
